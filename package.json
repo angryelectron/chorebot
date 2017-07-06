@@ -1,0 +1,28 @@
+{
+  "name": "chorebot",
+  "version": "0.0.0",
+  "description": "Twitterbot reminding followers to do their household chores",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angryelectron/chorebot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "chores",
+    "housework"
+  ],
+  "author": "Andrew Bythell <abythell@ieee.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angryelectron/chorebot/issues"
+  },
+  "homepage": "https://github.com/angryelectron/chorebot#readme"
+}
