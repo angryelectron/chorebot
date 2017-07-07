@@ -1,6 +1,6 @@
 {
   "name": "chorebot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Twitterbot reminding followers to do their household chores",
   "main": "chorebot.js",
   "directories": {
