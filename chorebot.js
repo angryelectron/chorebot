@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 const Twit = require('twit')
 const Chores = require('./lib/chores.js')
 const CronJob = require('cron').CronJob

@@ -1,1 +1,4 @@
 node_modules
+chorebot.log
+credentials.json
+npm-debug.log

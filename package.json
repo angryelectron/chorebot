@@ -2,11 +2,14 @@
   "name": "chorebot",
   "version": "0.0.0",
   "description": "Twitterbot reminding followers to do their household chores",
-  "main": "index.js",
+  "main": "chorebot.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "pretest": "standard",
     "test": "mocha"
   },
   "repository": {
@@ -24,5 +27,16 @@
   "bugs": {
     "url": "https://github.com/angryelectron/chorebot/issues"
   },
-  "homepage": "https://github.com/angryelectron/chorebot#readme"
+  "homepage": "https://github.com/angryelectron/chorebot#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.6",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "cron": "^1.2.1",
+    "twit": "^2.2.9",
+    "winston": "^2.3.1"
+  }
 }
