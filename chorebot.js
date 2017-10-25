@@ -1,9 +1,10 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 
 const Twit = require('twit')
 const Chores = require('./lib/chores.js')
 const CronJob = require('cron').CronJob
 const winston = require('winston')
+
 const chores = new Chores()
 const credentials = require('./credentials.json')
 const twitter = new Twit(credentials)
@@ -14,7 +15,7 @@ winston.add(winston.transports.File, {
   timestamp: true
 })
 winston.info('Starting Chorebot.')
-let job = new CronJob('0 0 16 * * *', postAChore)
+let job = new CronJob('0 30 19 * * *', postAChore)
 job.start()
 
 function postAChore () {
